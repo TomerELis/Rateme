@@ -704,7 +704,7 @@ onClick={handC40}
 
 
 
-<button 
+{/* <button 
 
 onClick={handC41}
          className={`btn ${(changeColor41 === true)? 'btn' : 'special'}`} > 
@@ -714,7 +714,7 @@ onClick={handC41}
                 <button onClick={() => {SecondHandle('Mr White !')}} href="javascript:void(0)"
                 className="btn">בריכה</button >
             <button className="btn">חדר כושר</button>
-            <button className="btn">יציאה לגג</button>
+            <button className="btn">יציאה לגג</button> */}
 
 
 
@@ -728,7 +728,7 @@ onClick={handC41}
             <h5> </h5>
             <h5> </h5>
             <h5> </h5>
-
+{/* 
             <p>{name}</p>
             <p>{name}</p>
 
@@ -738,7 +738,7 @@ onClick={handC41}
                 SecondHandle('Mr white !')
             }}>מספר חדרים למיסטר וויט</button>
             <p>{name}</p>
-            
+             */}
             <h5> </h5>
             <h5> </h5>
             <h5> </h5>

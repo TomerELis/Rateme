@@ -1,7 +1,6 @@
 import Navbar from './Navbar';
 import Home from './Home';
 import { useState } from 'react';
-// import hom from './Home'; 
 
 
 function App() {
@@ -11,9 +10,7 @@ function App() {
   return (
     
     <div >
-      <div className='container'>
-  
-      </div>
+     
       <Navbar />
       <div className="content">
         <Home></Home>

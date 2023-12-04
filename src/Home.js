@@ -1,79 +1,121 @@
 import { useState } from "react";
 import React, { Component } from 'react';
+import Modal from "react-modal";
+
+
 
 
 const Home = () => {
     
-
-
     
     const [name, setName] = useState ('rate');
     const [k, setK] = useState(0);
 
-
-
+    const AdjustRating = (k) => {
+        if (k >20) {k=5};
+        if (k<20) {k=0};
+    }
 
 //#region 
     //
-    const [changeColor1, setchangeColor1] = useState(true)
-    const handC1 = () => {
-        setchangeColor1(!changeColor1)
-    }
     
+    //Model open new tab
+    const [isModalOpen, setModalOpen] = useState(false);
+    const openModal = () => {
+        setModalOpen(true);
+        scrollToTop();
+        
+
+        
+      };
+      
+      const closeModal = () => {
+        window.location.reload()
+
+      };
+
+
     const [changeColor, setchangeColor] = useState(true)
     const handC = () => {
         setchangeColor(!changeColor)
+        ThirdClick(-2);
+    }
+    const [changeColor1, setchangeColor1] = useState(true)
+    const handC1 = () => {
+        setchangeColor1(!changeColor1)
+        ThirdClick(0);
     }
 
 
     const [changeColor2, setchangeColor2] = useState(true)
     const handC2 = () => {
         setchangeColor2(!changeColor2)
+        ThirdClick(1);
+
     }
     const [changeColor3, setchangeColor3] = useState(true)
     const handC3 = () => {
         setchangeColor3(!changeColor3)
+        ThirdClick(2);
+
     }
     const [changeColor4, setchangeColor4] = useState(true)
     const handC4 = () => {
         setchangeColor4(!changeColor4)
+        ThirdClick(-2);
+
     }
     const [changeColor5, setchangeColor5] = useState(true)
     const handC5 = () => {
         setchangeColor5(!changeColor5)
+        ThirdClick(-2);
+
     }
 
     
     const [changeColor6, setchangeColor6] = useState(true)
     const handC6 = () => {
         setchangeColor6(!changeColor6)
+        ThirdClick(0);
+
     }
     const [changeColor7, setchangeColor7] = useState(true)
     const handC7 = () => {
         setchangeColor7(!changeColor7)
+        ThirdClick(0);
+
     }
     const [changeColor8, setchangeColor8] = useState(true)
     const handC8 = () => {
         setchangeColor8(!changeColor8)
+        ThirdClick(2);
+
     }
     const [changeColor9, setchangeColor9] = useState(true)
     const handC9 = () => {
         setchangeColor9(!changeColor9)
+        ThirdClick(0);
+
     }
     const [changeColor10, setchangeColor10] = useState(true)
     const handC10 = () => {
         setchangeColor10(!changeColor10)
+        ThirdClick(0);
+
     }
 
     const [changeColor11, setchangeColor11] = useState(true)
     const handC11 = () => {
         setchangeColor11(!changeColor11)
+        ThirdClick(-2);
+
     }
     
 
     const [changeColor12, setchangeColor12] = useState(true)
     const handC12 = () => {
         setchangeColor12(!changeColor12)
+        ThirdClick(2);
     }
 
     const [changeColor13, setchangeColor13] = useState(true)
@@ -101,107 +143,155 @@ const Home = () => {
     const [changeColor18, setchangeColor18] = useState(true)
     const handC18 = () => {
         setchangeColor18(!changeColor18)
+        ThirdClick(2);
+
     }
     const [changeColor19, setchangeColor19] = useState(true)
     const handC19 = () => {
         setchangeColor19(!changeColor19)
+        ThirdClick(0);
+
     }
     const [changeColor20, setchangeColor20] = useState(true)
     const handC20 = () => {
         setchangeColor20(!changeColor20)
+        ThirdClick(0);
+
     }
     const [changeColor21, setchangeColor21] = useState(true)
     const handC21 = () => {
         setchangeColor21(!changeColor21)
+        ThirdClick(2);
+
     }
     const [changeColor22, setchangeColor22] = useState(true)
     const handC22 = () => {
         setchangeColor22(!changeColor22)
+        ThirdClick(2);
+
     }
     const [changeColor23, setchangeColor23] = useState(true)
     const handC23 = () => {
         setchangeColor23(!changeColor23)
+        ThirdClick(4);
+
     }
     const [changeColor24, setchangeColor24] = useState(true)
     const handC24 = () => {
         setchangeColor24(!changeColor24)
+        ThirdClick(1);
+
     }
     const [changeColor25, setchangeColor25] = useState(true)
     const handC25 = () => {
         setchangeColor25(!changeColor25)
+        ThirdClick(-2);
+
     }
     const [changeColor26, setchangeColor26] = useState(true)
     const handC26 = () => {
         setchangeColor26(!changeColor26)
+        ThirdClick(-5);
+
     }
     const [changeColor27, setchangeColor27] = useState(true)
     const handC27 = () => {
         setchangeColor27(!changeColor27)
+        ThirdClick(-5);
+
     }
     const [changeColor28, setchangeColor28] = useState(true)
     const handC28 = () => {
         setchangeColor28(!changeColor28)
+        ThirdClick(0);
     }
     const [changeColor29, setchangeColor29] = useState(true)
     const handC29 = () => {
         setchangeColor29(!changeColor29)
+        ThirdClick(4);
+
     }
     const [changeColor30, setchangeColor30] = useState(true)
     const handC30 = () => {
         setchangeColor30(!changeColor30)
+        ThirdClick(0);
+
     }
     const [changeColor31, setchangeColor31] = useState(true)
     const handC31 = () => {
         setchangeColor31(!changeColor31)
+        ThirdClick(0);
+
     }
     const [changeColor32, setchangeColor32] = useState(true)
     const handC32 = () => {
         setchangeColor32(!changeColor32)
+        ThirdClick(0);
+
     }
     const [changeColor33, setchangeColor33] = useState(true)
     const handC33 = () => {
         setchangeColor33(!changeColor33)
+        ThirdClick(0);
+
     }
     const [changeColor34, setchangeColor34] = useState(true)
     const handC34 = () => {
         setchangeColor34(!changeColor34)
+        ThirdClick(-2);
+
     }
     const [changeColor35, setchangeColor35] = useState(true)
     const handC35 = () => {
         setchangeColor35(!changeColor35)
+        ThirdClick(1);
+
     }
     const [changeColor36, setchangeColor36] = useState(true)
     const handC36 = () => {
         setchangeColor36(!changeColor36)
+        ThirdClick(3);
+
     }
     const [changeColor37, setchangeColor37] = useState(true)
     const handC37 = () => {
         setchangeColor37(!changeColor37)
+        ThirdClick(12);
+
     }
     const [changeColor38, setchangeColor38] = useState(true)
     const handC38 = () => {
         setchangeColor38(!changeColor38)
+        ThirdClick(6);
+
     }    
     const [changeColor39, setchangeColor39] = useState(true)
     const handC39 = () => {
         setchangeColor39(!changeColor39)
+        ThirdClick(8);
+
     }
     const [changeColor40, setchangeColor40] = useState(true)
     const handC40 = () => {
         setchangeColor40(!changeColor40)
+        ThirdClick(6);
+
     }
-    //#endregion
 
     const [changeColor41, setchangeColor41] = useState(true)
     const handC41 = () => {
-        // setK(k + 5);
-        setName(k);
         setchangeColor41(!changeColor41)
+        LastClick(k);
+        AdjustRating(k);
+
+
+        
+        
     }
 
-    //
 
 
+    //#endregion
 
 
 
@@ -212,7 +302,10 @@ const Home = () => {
         let k=3;
     }
 
-
+    const ThirdClick = (int) => {
+        setK(k + int);
+    }
+  
     const SecondHandle = (name) => {
         console.log('YOOO!' + name);
         setK(k + 0.1);
@@ -220,26 +313,51 @@ const Home = () => {
 
     
         <a href="javascript:void(0)" className="special">1200 - 1600</a>
-
     
     }
+    /*<h1 className="basic" style=
+            {{color: "white", backgroundColor: "#1e90FF", padding: 0 ,marginLeft: 370.}}>
+             !
+                דרג לי את הדירה</h1> */
+                const [isPopupVisible, setPopupVisible] = useState(false);
+
+
+                const openPopup = () => {
+                    setPopupVisible(true);
+                    
+                  };
+                
+                  const closePopup = () => {
+                    setPopupVisible(false);
+                    
+
+                    
+                  };
+                
+                  const LastClick = () => {
+                    openModal();
+
+                    
+                  };
+                  const scrollToTop = () => {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                };
+                
+
+                
     return (
         <div className="Home">
-
-
-
-
-            <h1 className="basic" style=
-            {{color: "white", backgroundColor: "#1e90FF", padding: 0, marginLeft: 370}}>
-             !
-                דרג לי את הדירה</h1>
+            
             <h5> </h5>
-            <h2>: תשלום לשותף בחודש</h2>
+            <h2>: שכר דירה לשותף בחודש</h2>
                <body>
 
 
             <p>
+            <p>counter = {k}</p>
+            
             <button
+            /*                    onClick={handC=> setK(k + 0.1)} handC12*/
                     onClick={handC}
                      className={`btn ${(changeColor === true)? 'btn' : 'special'}`} 
             >2000+</button>
@@ -698,7 +816,9 @@ onClick={handC40}
 
 
 
+
 </body>
+
             
             <h5> </h5>
 
@@ -718,47 +838,67 @@ onClick={handC41}
 
 
 
+<p>{k}</p>
 
                 
 
-            <h5> </h5>
-            <h5> </h5>
-
-            <h5> </h5>
-            <h5> </h5>
-            <h5> </h5>
-            <h5> </h5>
-{/* 
-            <p>{name}</p>
-            <p>{name}</p>
-
-
-
-            <button onClick={() => { 
-                SecondHandle('Mr white !')
-            }}>מספר חדרים למיסטר וויט</button>
-            <p>{name}</p>
-             */}
             <h5> </h5>
             <h5> </h5>
             <h5> </h5>
             <h5> </h5>
 
          
+            <Modal  
+                 isOpen={isModalOpen}
+                 onRequestClose={closeModal}
+                 contentLabel="Example Modal"
+                 style={{
+                    overlay: {
+                      backgroundColor: 'rgba(0, 0, 0, 0.5)',
+                    },
+                    content: {
+                      width: '25%', // Adjust the width as needed
+                      margin: 'auto',
+                    },
+                  }}
+                 >
+                    
+  <div style={{ textAlign: 'left', color: 'goldenrod' }}>
+    <h1>הדירוג שלך הוא {}</h1>
+    {[1, 2, 3, 4, 5].map((star) => (
+        <span key={star} className={star <= Math.floor(k) ? "filled" : ""}>
+            ★
+        </span>
+    )).slice(0, Math.floor(k))}    
+    <h5>  {k}  </h5>
+    </div>
+    <div>
+    <button onClick={closeModal} className={`btn ${(changeColor40 === true) ? 'btn' : 'special'}`}>בדוק מחדש</button>
 
+    </div>
+
+
+
+</Modal>
 
 
     
+    
+
+<button onClick={handC41}className={`btn ${(changeColor40 === true)? 'btn' : 'special'}`}>בדוק</button>
+{isPopupVisible && (
+        <div className="popup">
+          <div className="popup-content">
+            <span className="close" onClick={closePopup}>
+              &times;
+            </span>
+            <p>הדירוג שלך הוא ★</p>
+            
+          </div>
+        </div>
+      )}
 
 
-
-            <h5> </h5>
-            <h5> </h5>
-
-
-
-
-            <button onClickk={handleClick}className="btn">בדוק</button>
         </div>
       );
 }

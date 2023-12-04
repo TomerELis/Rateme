@@ -21,10 +21,13 @@
   max-width: 600px;
   margin: 0 auto;
   border-bottom: 1px solid #f2f2f2;
+  border-left: 430px solid #f2f2f2;
+  border-right: 450px solid #f2f2f2;
 }
 .navbar h1 {
   color: #f83b73;
 }
+
 .navbar .links {
   margin-left: auto;
 }
@@ -36,21 +39,28 @@
 .navbar a:hover {
   color: #f1356d;
 }
-.content {
+.content {  /* color of outside of the border */
+  
   max-width: 600px;
-  margin: 40px auto;
+  margin: 0px auto;
   padding: 20px;
-}
-.basic{
-  color:#faff00
+  border-left: 430px solid #f2f2f2;
+  border-right: 450px solid #f2f2f2;
+  border-bottom: 9px solid #f2f2f2;
+  
+  
+
 }
 
+
 body{
+
   margin: 0;
   padding: 10px;
   height: 10vh;
   justify-content: center;
   display: flex;
+  
 }
 body2{
   margin-left: -265px;
@@ -58,6 +68,7 @@ body2{
   height: 10vh;
   justify-content: center;
   display: flex;
+  
 }
 body3{
   margin-left: -140px;
@@ -149,6 +160,13 @@ body5{
 .btnK:focus{
   background-color: rgb(0, 72, 255);
 
+}
+.star {
+  color: gold;
+}
+
+.filled {
+  color: gold;
 }
 
 

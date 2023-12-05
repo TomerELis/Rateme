@@ -38,7 +38,7 @@ const Home = () => {
     const [changeColor, setchangeColor] = useState(true)
     const handC = () => {
         setchangeColor(!changeColor)
-        ThirdClick(-2);
+        ThirdClick(0);
     }
     const [changeColor1, setchangeColor1] = useState(true)
     const handC1 = () => {
@@ -50,25 +50,25 @@ const Home = () => {
     const [changeColor2, setchangeColor2] = useState(true)
     const handC2 = () => {
         setchangeColor2(!changeColor2)
-        ThirdClick(1);
+        ThirdClick(0);
 
     }
     const [changeColor3, setchangeColor3] = useState(true)
     const handC3 = () => {
         setchangeColor3(!changeColor3)
-        ThirdClick(2);
+        ThirdClick(0);
 
     }
     const [changeColor4, setchangeColor4] = useState(true)
     const handC4 = () => {
         setchangeColor4(!changeColor4)
-        ThirdClick(-2);
+        ThirdClick(0);
 
     }
     const [changeColor5, setchangeColor5] = useState(true)
     const handC5 = () => {
         setchangeColor5(!changeColor5)
-        ThirdClick(-2);
+        ThirdClick(0);
 
     }
 
@@ -107,7 +107,7 @@ const Home = () => {
     const [changeColor11, setchangeColor11] = useState(true)
     const handC11 = () => {
         setchangeColor11(!changeColor11)
-        ThirdClick(-2);
+        ThirdClick(0);
 
     }
     
@@ -161,19 +161,19 @@ const Home = () => {
     const [changeColor21, setchangeColor21] = useState(true)
     const handC21 = () => {
         setchangeColor21(!changeColor21)
-        ThirdClick(2);
+        ThirdClick(1);
 
     }
     const [changeColor22, setchangeColor22] = useState(true)
     const handC22 = () => {
         setchangeColor22(!changeColor22)
-        ThirdClick(2);
+        ThirdClick(1);
 
     }
     const [changeColor23, setchangeColor23] = useState(true)
     const handC23 = () => {
         setchangeColor23(!changeColor23)
-        ThirdClick(4);
+        ThirdClick(0);
 
     }
     const [changeColor24, setchangeColor24] = useState(true)
@@ -185,19 +185,19 @@ const Home = () => {
     const [changeColor25, setchangeColor25] = useState(true)
     const handC25 = () => {
         setchangeColor25(!changeColor25)
-        ThirdClick(-2);
+        ThirdClick(0);
 
     }
     const [changeColor26, setchangeColor26] = useState(true)
     const handC26 = () => {
         setchangeColor26(!changeColor26)
-        ThirdClick(-5);
+        ThirdClick(0);
 
     }
     const [changeColor27, setchangeColor27] = useState(true)
     const handC27 = () => {
         setchangeColor27(!changeColor27)
-        ThirdClick(-5);
+        ThirdClick(0);
 
     }
     const [changeColor28, setchangeColor28] = useState(true)
@@ -208,7 +208,7 @@ const Home = () => {
     const [changeColor29, setchangeColor29] = useState(true)
     const handC29 = () => {
         setchangeColor29(!changeColor29)
-        ThirdClick(4);
+        ThirdClick(1);
 
     }
     const [changeColor30, setchangeColor30] = useState(true)
@@ -238,43 +238,43 @@ const Home = () => {
     const [changeColor34, setchangeColor34] = useState(true)
     const handC34 = () => {
         setchangeColor34(!changeColor34)
-        ThirdClick(-2);
+        ThirdClick(0);
 
     }
     const [changeColor35, setchangeColor35] = useState(true)
     const handC35 = () => {
         setchangeColor35(!changeColor35)
-        ThirdClick(1);
+        ThirdClick(0);
 
     }
     const [changeColor36, setchangeColor36] = useState(true)
     const handC36 = () => {
         setchangeColor36(!changeColor36)
-        ThirdClick(3);
+        ThirdClick(0);
 
     }
     const [changeColor37, setchangeColor37] = useState(true)
     const handC37 = () => {
         setchangeColor37(!changeColor37)
-        ThirdClick(12);
+        ThirdClick(1);
 
     }
     const [changeColor38, setchangeColor38] = useState(true)
     const handC38 = () => {
         setchangeColor38(!changeColor38)
-        ThirdClick(6);
+        ThirdClick(1);
 
     }    
     const [changeColor39, setchangeColor39] = useState(true)
     const handC39 = () => {
         setchangeColor39(!changeColor39)
-        ThirdClick(8);
+        ThirdClick(1);
 
     }
     const [changeColor40, setchangeColor40] = useState(true)
     const handC40 = () => {
         setchangeColor40(!changeColor40)
-        ThirdClick(6);
+        ThirdClick(1);
 
     }
 
@@ -802,7 +802,7 @@ onClick={handC41}
                       backgroundColor: 'rgba(0, 0, 0, 0.5)',
                     },
                     content: {
-                      width: '25%', // Adjust the width as needed
+                      width: '25%', // Adjust the width as needed  //<p>counter = {k}</p>
                       margin: 'auto',
                     },
                   }}
@@ -818,7 +818,7 @@ onClick={handC41}
     <h5>  {}  </h5>
     </div>
     <div>
-    <button onClick={closeModal} className={`btn ${(changeColor40 === true) ? 'btn' : 'special'}`}>בדוק מחדש</button>
+    <button onClick={closeModal} className={`btn ${(changeColor41 === true) ? 'btn' : 'special'}`}>בדוק מחדש</button>
 
     </div>
 
@@ -830,7 +830,7 @@ onClick={handC41}
     
     
 
-<button onClick={handC41}className={`btn ${(changeColor40 === true)? 'btn' : 'special'}`}>בדוק</button>
+<button onClick={handC41}className={`btn ${(changeColor41 === true)? 'btn' : 'special'}`}>בדוק</button>
 {isPopupVisible && (
         <div className="popup">
           <div className="popup-content">

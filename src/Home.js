@@ -118,7 +118,7 @@ const Home = () => {
         ThirdClick(2);
     }
 
-    const [changeColor13, setchangeColor13] = useState(true)
+    /*const [changeColor13, setchangeColor13] = useState(true)
     const handC13 = () => {
         setchangeColor13(!changeColor13)
     }
@@ -139,7 +139,7 @@ const Home = () => {
     const [changeColor17, setchangeColor17] = useState(true)
     const handC17 = () => {
         setchangeColor17(!changeColor17)
-    }
+    }*/
     const [changeColor18, setchangeColor18] = useState(true)
     const handC18 = () => {
         setchangeColor18(!changeColor18)
@@ -354,7 +354,6 @@ const Home = () => {
 
 
             <p>
-            <p>counter = {k}</p>
             
             <button
             /*                    onClick={handC=> setK(k + 0.1)} handC12*/
@@ -483,65 +482,11 @@ const Home = () => {
 
 
             </body>
-            <h5> </h5>
   
 
 
-            <h2>             :הבר הכי קרוב אליי ממוקם</h2>
 
-            <body5>
-
-
-            <button
-                    onClick={handC13}
-                     className={`btn ${(changeColor13 === true)? 'btn' : 'special'}`} 
-            >5 כוכבים
-            </button>
-
-            <button 
-            
-            onClick={handC14}
-                     className={`btn ${(changeColor14 === true)? 'btn' : 'special'}`} > 
-                     4 כוכבים
-                
-            </button>
-
-
-           
-            <button 
-            
-            onClick={handC15}
-                     className={`btn ${(changeColor15 === true)? 'btn' : 'special'}`} > 
-                     3 כוכבים
-                
-            </button>
-
-            <button 
-            
-            onClick={handC16}
-                     className={`btn ${(changeColor16 === true)? 'btn' : 'special'}`} > 
-                    2 כוכבים
-
-            </button>
-
-            <button 
-
-            onClick={handC17}
-                     className={`btn ${(changeColor17 === true)? 'btn' : 'special'}`} > 
-                     כוכב 1
-                
-            </button>
-
-
-
-
-
-
-
-
-            </body5>
          
-            <h5> </h5>
             <h2>:בניין או קרקע</h2>
 
 
@@ -838,7 +783,7 @@ onClick={handC41}
 
 
 
-<p>{k}</p>
+<p>{}</p>
 
                 
 
@@ -870,7 +815,7 @@ onClick={handC41}
             ★
         </span>
     )).slice(0, Math.floor(k))}    
-    <h5>  {k}  </h5>
+    <h5>  {}  </h5>
     </div>
     <div>
     <button onClick={closeModal} className={`btn ${(changeColor40 === true) ? 'btn' : 'special'}`}>בדוק מחדש</button>

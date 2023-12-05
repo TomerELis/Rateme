@@ -56,7 +56,7 @@ const Home = () => {
     const [changeColor3, setchangeColor3] = useState(true)
     const handC3 = () => {
         setchangeColor3(!changeColor3)
-        ThirdClick(0);
+        ThirdClick(1);
 
     }
     const [changeColor4, setchangeColor4] = useState(true)
@@ -88,7 +88,7 @@ const Home = () => {
     const [changeColor8, setchangeColor8] = useState(true)
     const handC8 = () => {
         setchangeColor8(!changeColor8)
-        ThirdClick(2);
+        ThirdClick(0);
 
     }
     const [changeColor9, setchangeColor9] = useState(true)
@@ -100,7 +100,7 @@ const Home = () => {
     const [changeColor10, setchangeColor10] = useState(true)
     const handC10 = () => {
         setchangeColor10(!changeColor10)
-        ThirdClick(0);
+        ThirdClick(1);
 
     }
 
@@ -115,7 +115,7 @@ const Home = () => {
     const [changeColor12, setchangeColor12] = useState(true)
     const handC12 = () => {
         setchangeColor12(!changeColor12)
-        ThirdClick(2);
+        ThirdClick(0);
     }
 
     /*const [changeColor13, setchangeColor13] = useState(true)
@@ -143,13 +143,13 @@ const Home = () => {
     const [changeColor18, setchangeColor18] = useState(true)
     const handC18 = () => {
         setchangeColor18(!changeColor18)
-        ThirdClick(2);
+        ThirdClick(1);
 
     }
     const [changeColor19, setchangeColor19] = useState(true)
     const handC19 = () => {
         setchangeColor19(!changeColor19)
-        ThirdClick(0);
+        ThirdClick(1);
 
     }
     const [changeColor20, setchangeColor20] = useState(true)
@@ -161,13 +161,13 @@ const Home = () => {
     const [changeColor21, setchangeColor21] = useState(true)
     const handC21 = () => {
         setchangeColor21(!changeColor21)
-        ThirdClick(1);
+        ThirdClick(0);
 
     }
     const [changeColor22, setchangeColor22] = useState(true)
     const handC22 = () => {
         setchangeColor22(!changeColor22)
-        ThirdClick(1);
+        ThirdClick(0);
 
     }
     const [changeColor23, setchangeColor23] = useState(true)
@@ -208,7 +208,7 @@ const Home = () => {
     const [changeColor29, setchangeColor29] = useState(true)
     const handC29 = () => {
         setchangeColor29(!changeColor29)
-        ThirdClick(1);
+        ThirdClick(0);
 
     }
     const [changeColor30, setchangeColor30] = useState(true)
@@ -244,7 +244,7 @@ const Home = () => {
     const [changeColor35, setchangeColor35] = useState(true)
     const handC35 = () => {
         setchangeColor35(!changeColor35)
-        ThirdClick(0);
+        ThirdClick(1);
 
     }
     const [changeColor36, setchangeColor36] = useState(true)
